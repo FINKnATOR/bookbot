@@ -1,4 +1,5 @@
 from stats import number_of_words
+from stats import number_of_characters
 
 def get_book_text(filepath):
     with open(filepath) as book_text:
@@ -12,5 +13,6 @@ word_count = number_of_words(book_text)
 
 def main():
     print(f"{word_count} words found in the document")
+    print(number_of_characters(book_text))
 
 main()
